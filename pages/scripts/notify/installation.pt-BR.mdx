@@ -1,0 +1,26 @@
+import { Steps } from 'nextra/components'
+ 
+## Começando
+ 
+Após ter efetuado a compra, você terá acesso ao script pela [Keymaster](https://keymaster.fivem.net/asset-grants). Sendo assim você poderá fazendo o download por lá. Após fazer o download do script siga os passos a seguir.
+ 
+<Steps>
+### Faça extração do arquivo ZIP
+ 
+Você tem o arquivo `fiveasy-notify.pack.zip`, clique com botão direito em seguida `Extrair Tudo`.
+ 
+### Coloque o script extraido em seus resources (Seu servidor)
+ 
+Após colocar o script em sua pasta `resources`, vá até o arquivo `server.cfg` e inclua o comando `ensure fiveasy-notify` para a inicialização automatica do script juntamento com seu servidor.
+
+### Pegue a permissão para acessar a interface do script
+
+Todos os jogadores tem acesso ao comando `notify-get-permission`, onde será entregue a permissão daquele jogador, para que possa ser concebida a permissão, caso o passo a seguir seja feito.
+
+Exemplo: `add_ace identifier.license:<Licença do jogador> notify.editor allow`
+
+Após copiar essa permissão cole no `server.cfg` e reinicie o servidor. E, você terá acesso a interface do script.
+
+</Steps
+
+>

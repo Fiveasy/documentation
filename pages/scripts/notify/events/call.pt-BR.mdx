@@ -1,0 +1,27 @@
+import { Tabs } from 'nextra/components'
+ 
+## Chamar notificação
+ 
+Para chamar uma notificação atráves desse evento, você já deve ter uma notificação criada.
+
+### Via Client
+
+```lua copy
+TriggerEvent("fiveasy-notify", "nome da sua notificação", { duration = 8000 })
+```
+
+### Via Server
+
+```lua copy
+TriggerClientEvent("fiveasy-notify", source, "nome da sua notificação", { duration = 8000 })
+```
+
+### Chamando com variaveis
+
+```lua copy
+TriggerEvent("fiveasy-notify", "nome da sua notificação", {
+  duration = 8000,
+  titleVariables = { key = value },
+  messageVariables = { key = value }
+})
+```

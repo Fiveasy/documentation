@@ -20,7 +20,10 @@ export default {
   },
   primaryHue: 164,
   primarySaturation: 100,
-  i18n: [{ locale: "pt-BR", text: "Potuguês do Brasil" }],
+  i18n: [
+    { locale: "pt-BR", text: "Potuguês do Brasil" },
+    { locale: "en", text: "English" },
+  ],
   search: {
     placeholder: "Search...",
   },
@@ -43,10 +46,10 @@ export default {
       </svg>
     ),
   },
-  /* project: {
+  /*   project: {
     link: "https://github.com/shuding/nextra",
-  },
-  banner: {
+  }, */
+  /* banner: {
     key: "2.0-release",
     text: (
       <a href="https://nextra.site" target="_blank">
