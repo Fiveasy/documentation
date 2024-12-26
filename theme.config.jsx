@@ -1,5 +1,6 @@
 import { Logo } from "./components/logo";
-import Favicon from "./public/favicon.ico";
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default {
   useNextSeoProps() {
@@ -13,7 +14,9 @@ export default {
   head: () => {
     return (
       <>
-        <link rel="icon" type="image/x-icon" href={Favicon} />
+        <title>Fiveasy Docs</title>
+
+        <link rel="icon" href={`${baseUrl}/favicon.ico`} />
         <meta property="og:title" content="Fiveasy Documentation" />
       </>
     );
@@ -21,8 +24,8 @@ export default {
   primaryHue: 164,
   primarySaturation: 100,
   i18n: [
-    { locale: "pt-BR", text: "Potuguês do Brasil" },
-    { locale: "en", text: "English" },
+    { locale: "pt", text: "Potuguês do Brasil" },
+    /* { locale: "en", text: "English" }, */
   ],
   search: {
     placeholder: "Search...",
