@@ -1,0 +1,27 @@
+import { Tabs } from 'nextra/components'
+ 
+## Trigger Notification
+
+To trigger a notification using this event, you must already have a notification created.
+
+### Via Client
+
+```lua copy
+TriggerEvent("fiveasy-notify", "your notification name", { duration = 8000 })
+```
+
+### Via Server
+
+```lua copy
+TriggerClientEvent("fiveasy-notify", source, "your notification name", { duration = 8000 })
+```
+
+### Triggering with Variables
+
+```lua copy
+TriggerEvent("fiveasy-notify", "your notification name", {
+  duration = 8000,
+  titleVariables = { key = value },
+  messageVariables = { key = value }
+})
+```

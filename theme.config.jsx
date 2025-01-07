@@ -25,7 +25,7 @@ export default {
   primarySaturation: 100,
   i18n: [
     { locale: "pt", text: "Potuguês do Brasil" },
-    /* { locale: "en", text: "English" }, */
+    { locale: "en", text: "English" },
   ],
   search: {
     placeholder: "Search...",
